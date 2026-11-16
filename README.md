@@ -63,6 +63,13 @@ Configure default base branch and your quality gate (`npm test`, `npm run verify
 
 **Jake Armijo** ([@jakefrompracticelink](https://github.com/jakefrompracticelink)) — PracticeLink engineering.
 
-If this saves you a bad merge, a star on the repo helps others find it.
+If this saves you a bad merge, [★ star the repo](https://github.com/jakefrompracticelink/agent-skills/stargazers) so others find it.
+
+## Share (copy/paste)
+
+> **Bar-raiser engineering for coding agents** — not another one-shot “LGTM” review.  
+> Independent reviewer subagents · test-first fix loop · full-diff re-review · adversarial merge gate (G-1–G-7).  
+> `npx skills add jakefrompracticelink/agent-skills`  
+> https://skills.sh/jakefrompracticelink/agent-skills
 
 [CHANGELOG](./CHANGELOG.md) · [CONTRIBUTING](./CONTRIBUTING.md) · [ROADMAP](./ROADMAP.md)

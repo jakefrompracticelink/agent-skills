@@ -2,6 +2,12 @@
 
 All notable changes to the public skill package. Internal pl-cmp forks (`jakes-pr-review`, parity `/design-review`) may carry extra policy; port generic improvements here.
 
+## [1.0.1] - 2026-11-15
+
+### Fixed
+
+- README badges: use shields.io until `www.skills.sh/b/...` install counter indexes for new repos
+
 ## [1.0.0] - 2026-03-21
 
 ### Added
