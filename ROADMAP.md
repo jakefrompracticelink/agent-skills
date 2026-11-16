@@ -32,7 +32,7 @@ npx skills add <owner>/<repo> --skill bar-raiser-pr-review -a cursor
 - [x] Run `npx skills add jakefrompracticelink/agent-skills --list`
 - [ ] README: switch to official `https://www.skills.sh/b/jakefrompracticelink/agent-skills` badge when API stops returning “resource not found” (until then, shields.io link badge)
 - [x] Install once from GitHub with telemetry on so skills.sh can index (`npx skills add … --all -g -y`)
-- [x] pl-cmp dogfoods lockfile — merged https://github.com/practicelink/pl-cmp/pull/203
+- [x] pl-cmp dogfoods lockfile — #203; install guardrails — https://github.com/practicelink/pl-cmp/pull/204
 - [ ] Optional: Vercel pack for one-line team install
 
 ## Intentionally not published
