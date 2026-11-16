@@ -1,65 +1,68 @@
-# Agent skills — bar raiser engineering
+# agent-skills
 
-Reusable [Agent Skills](https://skills.sh/) for teams that want **independent agent review**, **test-first fixes**, and **design review before code** — without a proprietary monorepo harness.
-
-Inspired by Amazon-style bar-raiser reviews and battle-tested on large TypeScript/Python repos. Skills work in **Cursor**, **Claude Code**, and other agents that support `SKILL.md`.
-
-## Install
-
-Requires Node.js 22+ and [GitHub CLI](https://cli.github.com/) (`gh`) for PR skills.
-
-```bash
-# Browse what will install (no write)
-npx skills add jakefrompracticelink/agent-skills --list
-
-# Install everything into the current project
-npx skills add jakefrompracticelink/agent-skills
-
-# Pick one skill and target Cursor
-npx skills add jakefrompracticelink/agent-skills --skill bar-raiser-pr-review -a cursor
-```
-
-Local development (this checkout):
-
-```bash
-npx skills add /Users/jakearmijo/Documents/skills --list
-```
+**Bar-raiser engineering for coding agents** — not another one-shot “LGTM” review.
 
 [![skills.sh](https://skills.sh/b/jakefrompracticelink/agent-skills)](https://skills.sh/jakefrompracticelink/agent-skills)
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
+[![GitHub](https://img.shields.io/github/stars/jakefrompracticelink/agent-skills?style=social)](https://github.com/jakefrompracticelink/agent-skills)
+
+Reusable [Agent Skills](https://skills.sh/) built from production workflows on large TypeScript/Python codebases: **independent reviewer subagents**, **test-first fix loops**, **full-diff re-review**, and an adversarial **merge gate** (G-1–G-7). Works in **Cursor**, **Claude Code**, Codex, and [70+ agents](https://github.com/vercel-labs/skills) via the skills CLI.
+
+**Install (one line):**
+
+```bash
+npx skills add jakefrompracticelink/agent-skills
+```
+
+Browse without installing:
+
+```bash
+npx skills add jakefrompracticelink/agent-skills --list
+```
+
+Install one skill into Cursor:
+
+```bash
+npx skills add jakefrompracticelink/agent-skills --skill bar-raiser-pr-review -a cursor -y
+```
+
+Directory page: **https://skills.sh/jakefrompracticelink/agent-skills**
+
+## Why these skills
+
+| Typical “code review” skill | This package |
+| --------------------------- | ------------ |
+| Posts comments | **Fix loop** — one finding, one commit, one test |
+| Same agent reviews its own fixes | **Fresh read-only** `pr-round-reviewer` every round |
+| Reviews only the latest diff | **Full-diff** re-review after every fix |
+| “Looks good” before merge | **Merge gate** — adversarial checklist at PR head |
+
+Inspired by Amazon bar-raiser culture; generalized for any GitHub + `gh` workflow.
 
 ## Skills
 
 | Skill | When to use |
 | ----- | ----------- |
-| **bar-raiser-pr-review** | Full PR lifecycle: bar-raiser review → one-finding-one-commit fixes → full-diff re-review → adversarial merge gate |
-| **pr-round-reviewer** | Launch a **fresh read-only** reviewer for one round (or merge gate); never review your own fixes |
-| **design-review** | Before implementation: two independent passes (product + implementation) on a design doc |
-| **design-round-reviewer** | Single read-only design review with product or implementation lens |
-| **test-first** | Implement features and bugs test-first; assert behavior, not structure |
+| **bar-raiser-pr-review** | Orchestrator: review → fix → loop → merge gate |
+| **pr-round-reviewer** | One read-only review round (launch as subagent) |
+| **design-review** | Dual-lens design doc review before implementation |
+| **design-round-reviewer** | Single product or implementation design pass |
+| **test-first** | Test-first features and bug fixes |
 
-### Pairs
+**Pairs:** `bar-raiser-pr-review` + `pr-round-reviewer` for PRs; `design-review` + two `design-round-reviewer` runs for designs.
 
-- **PR:** Run `bar-raiser-pr-review` in the orchestrator; launch **`pr-round-reviewer`** for each review round.
-- **Design:** Run `design-review`; launch two **`design-round-reviewer`** subagents (product + implementation).
+## Requirements
 
-## Configure your repo
+- Node.js **22+** (skills CLI)
+- **[GitHub CLI](https://cli.github.com/)** (`gh`) for PR skills
+- Optional: subagent support in your agent for true reviewer isolation
 
-Set these in chat or in your `AGENTS.md` / `CONTRIBUTING.md` so skills pick them up:
-
-| Variable | Typical value |
-| -------- | ------------- |
-| Default base branch | `main` or `develop` |
-| Local quality gate | `npm run verify`, `npm test`, `make check`, etc. |
-| Commit style | Conventional Commits / project standard |
-
-`bar-raiser-pr-review` asks for the base branch if the PR's `baseRefName` does not match your stated default.
-
-## Quick pitch
-
-Most agent “code review” skills stop at a comment. These skills run the **full loop**: independent reviewer → failing test → fix → **full-diff** re-review → adversarial **merge gate** (G-1–G-7).
+Configure default base branch and your quality gate (`npm test`, `npm run verify`, etc.) in `AGENTS.md` or chat.
 
 ## Author
 
-Jake Armijo — [skills.sh](https://skills.sh/) distribution via install telemetry. MIT license.
+**Jake Armijo** ([@jakefrompracticelink](https://github.com/jakefrompracticelink)) — PracticeLink engineering.
 
-See [ROADMAP.md](./ROADMAP.md), [CHANGELOG.md](./CHANGELOG.md), and [CONTRIBUTING.md](./CONTRIBUTING.md).
+If this saves you a bad merge, a star on the repo helps others find it.
+
+[CHANGELOG](./CHANGELOG.md) · [CONTRIBUTING](./CONTRIBUTING.md) · [ROADMAP](./ROADMAP.md)
