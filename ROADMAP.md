@@ -11,6 +11,7 @@ Tracks what ships in this repo, provenance, and what stays private.
 | `design-review` | Dual-lens design doc review before coding | Generalized from internal `/design-review` |
 | `design-round-reviewer` | Read-only product or implementation lens | Generalized from `design-round-reviewer` agent |
 | `test-first` | Test-first implementation discipline | Generalized from always-on TDD rule |
+| `code-review` | Entry / router for skills.sh search | New in v1.2.0 |
 
 ## Install & list (local)
 
