@@ -31,7 +31,7 @@ npx skills add <owner>/<repo> --skill bar-raiser-pr-review -a cursor
 - [x] Create public GitHub repo and push → https://github.com/jakefrompracticelink/agent-skills
 - [x] Run `npx skills add jakefrompracticelink/agent-skills --list`
 - [x] README badge: `https://skills.sh/b/jakefrompracticelink/agent-skills`
-- [ ] Install once from GitHub with telemetry on so skills.sh can index
+- [x] Install once from GitHub with telemetry on so skills.sh can index (`npx skills add … --all -g -y`)
 - [ ] Optional: Vercel pack for one-line team install
 
 ## Intentionally not published
