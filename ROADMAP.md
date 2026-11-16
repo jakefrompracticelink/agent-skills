@@ -32,6 +32,7 @@ npx skills add <owner>/<repo> --skill bar-raiser-pr-review -a cursor
 - [x] Run `npx skills add jakefrompracticelink/agent-skills --list`
 - [x] README badge: `https://skills.sh/b/jakefrompracticelink/agent-skills`
 - [x] Install once from GitHub with telemetry on so skills.sh can index (`npx skills add … --all -g -y`)
+- [x] pl-cmp dogfoods lockfile — merged https://github.com/practicelink/pl-cmp/pull/203
 - [ ] Optional: Vercel pack for one-line team install
 
 ## Intentionally not published
