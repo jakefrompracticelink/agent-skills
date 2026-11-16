@@ -1,6 +1,6 @@
 ---
 name: pr-round-reviewer
-description: Read-only full-diff pull request reviewer for exactly one round. Runs bar-raiser review dimensions, adversarial G-1–G-7 checklist on round 3 or merge gate, and returns review text only — no edits, commits, or posts. Use when launching an independent reviewer subagent for bar-raiser-pr-review or for a standalone Amazon-style PR pass.
+description: Read-only code review for one pull request round. Full-diff bar-raiser dimensions and merge-gate checklist G-1–G-7. No edits or posts. Use for code review, PR review, independent reviewer subagent, pre-merge review pass, or Amazon-style single-round review.
 ---
 
 # PR round reviewer (read-only)

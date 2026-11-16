@@ -1,6 +1,6 @@
 ---
 name: bar-raiser-pr-review
-description: Amazon-style bar-raiser pull request review through a fresh read-only reviewer, then fixes every finding in separate test-backed commits and loops — full-diff re-review, CI, and a mandatory adversarial merge gate at PR head. Use for bar-raiser PR review, pre-merge review, or when the user wants review-and-fix until green (not review-only).
+description: Code review and pull request bar-raiser loop for AI agents. Independent read-only reviewer, test-first fixes, full-diff re-review, adversarial merge gate (G-1–G-7). Use for code review, PR review, bar-raiser review, pre-merge review, review-and-fix until green, or Amazon-style PR review (not review-only).
 disable-model-invocation: true
 ---
 

@@ -2,6 +2,16 @@
 
 All notable changes to the public skill package. Internal pl-cmp forks (`jakes-pr-review`, parity `/design-review`) may carry extra policy; port generic improvements here.
 
+## [1.2.0] - 2026-11-15
+
+### Added
+
+- `code-review` entry skill for skills.sh / `skills find` discovery (routes to bar-raiser loop)
+
+### Changed
+
+- SEO-rich `description` frontmatter on bar-raiser and pr-round-reviewer skills
+
 ## [1.0.1] - 2026-11-15
 
 ### Fixed

@@ -2,6 +2,8 @@
 
 **Bar-raiser engineering for coding agents** — not another one-shot “LGTM” review.
 
+**On [skills.sh](https://skills.sh/jakefrompracticelink/agent-skills)** — installs are counted anonymously; each `npx skills add` helps the package show up on the [leaderboard](https://skills.sh/). If this helped you, run the install command once and star the repo.
+
 [![skills.sh](https://img.shields.io/badge/skills.sh-5_agent_skills-111111)](https://skills.sh/jakefrompracticelink/agent-skills)
 [![License: MIT](https://img.shields.io/github/license/jakefrompracticelink/agent-skills)](LICENSE)
 [![GitHub stars](https://img.shields.io/github/stars/jakefrompracticelink/agent-skills)](https://github.com/jakefrompracticelink/agent-skills/stargazers)
@@ -43,6 +45,7 @@ Inspired by Amazon bar-raiser culture; generalized for any GitHub + `gh` workflo
 
 | Skill | When to use |
 | ----- | ----------- |
+| **code-review** | Entry skill — routes to the right PR review skill (search-friendly) |
 | **bar-raiser-pr-review** | Orchestrator: review → fix → loop → merge gate |
 | **pr-round-reviewer** | One read-only review round (launch as subagent) |
 | **design-review** | Dual-lens design doc review before implementation |
