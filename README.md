@@ -54,8 +54,12 @@ Set these in chat or in your `AGENTS.md` / `CONTRIBUTING.md` so skills pick them
 
 `bar-raiser-pr-review` asks for the base branch if the PR's `baseRefName` does not match your stated default.
 
+## Quick pitch
+
+Most agent “code review” skills stop at a comment. These skills run the **full loop**: independent reviewer → failing test → fix → **full-diff** re-review → adversarial **merge gate** (G-1–G-7).
+
 ## Author
 
 Jake Armijo — [skills.sh](https://skills.sh/) distribution via install telemetry. MIT license.
 
-See [ROADMAP.md](./ROADMAP.md) for inventory, publish checklist, and what we keep internal.
+See [ROADMAP.md](./ROADMAP.md), [CHANGELOG.md](./CHANGELOG.md), and [CONTRIBUTING.md](./CONTRIBUTING.md).

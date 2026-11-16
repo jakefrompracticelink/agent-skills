@@ -51,6 +51,17 @@ Internal-only or too coupled to PracticeLink / pl-cmp:
 | `parallel-agent-worktrees` | Strip parity-doc rebase recipe; keep port/git rules only |
 | `read-only-agent-reviewer` | Meta-skill: isolation protocol only (subset of bar-raiser) |
 
+## pl-cmp integration
+
+PracticeLink monorepo pins **three** skills (avoids clashing with `/design-review`):
+
+| Installed | Stays in-repo |
+| --------- | ------------- |
+| `bar-raiser-pr-review`, `pr-round-reviewer`, `test-first` | `/jakes-pr-review`, `/design-review`, port/ship/PM commands |
+
+- `skills-lock.json` at repo root; `npm run skills:restore` after clone.
+- `.agents/` gitignored; portable edits go to [agent-skills](https://github.com/jakefrompracticelink/agent-skills).
+
 ## Quality bar (S-tier)
 
 - Works without private monorepo context
