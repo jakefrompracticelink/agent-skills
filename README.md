@@ -2,9 +2,9 @@
 
 **Bar-raiser engineering for coding agents** — not another one-shot “LGTM” review.
 
-[![skills.sh](https://skills.sh/b/jakefrompracticelink/agent-skills)](https://skills.sh/jakefrompracticelink/agent-skills)
-[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
-[![GitHub](https://img.shields.io/github/stars/jakefrompracticelink/agent-skills?style=social)](https://github.com/jakefrompracticelink/agent-skills)
+[![skills.sh](https://img.shields.io/badge/skills.sh-5_agent_skills-111111)](https://skills.sh/jakefrompracticelink/agent-skills)
+[![License: MIT](https://img.shields.io/github/license/jakefrompracticelink/agent-skills)](LICENSE)
+[![GitHub stars](https://img.shields.io/github/stars/jakefrompracticelink/agent-skills)](https://github.com/jakefrompracticelink/agent-skills/stargazers)
 
 Reusable [Agent Skills](https://skills.sh/) built from production workflows on large TypeScript/Python codebases: **independent reviewer subagents**, **test-first fix loops**, **full-diff re-review**, and an adversarial **merge gate** (G-1–G-7). Works in **Cursor**, **Claude Code**, Codex, and [70+ agents](https://github.com/vercel-labs/skills) via the skills CLI.
 
