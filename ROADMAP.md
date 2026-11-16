@@ -28,8 +28,8 @@ npx skills add <owner>/<repo> --skill bar-raiser-pr-review -a cursor
 ## Publish checklist
 
 - [x] Local `npx skills add . --list` — 5 skills
-- [ ] Create public GitHub repo and push → `jakefrompracticelink/agent-skills`
-- [ ] Run `npx skills add jakefrompracticelink/agent-skills --list`
+- [x] Create public GitHub repo and push → https://github.com/jakefrompracticelink/agent-skills
+- [x] Run `npx skills add jakefrompracticelink/agent-skills --list`
 - [x] README badge: `https://skills.sh/b/jakefrompracticelink/agent-skills`
 - [ ] Install once from GitHub with telemetry on so skills.sh can index
 - [ ] Optional: Vercel pack for one-line team install
